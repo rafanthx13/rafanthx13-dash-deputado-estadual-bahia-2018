@@ -45,7 +45,7 @@ Salvar libs em arquivo
 py -m pip freeze > requirements.txt
 ```
 
-Instalar do requirements.txt
+Instalar do `requirements.txt`
 
 ```
 py -m pip install -r requirements.txt
@@ -59,5 +59,23 @@ py -m pip install dash
 py -m pip install gunicorn
 py -m pip install pandas
 py -m pip install dash_bootstrap_templates  
+```
+
+## Deploy no Heroku
+
+dash-deputado-estadual-bahia-2018
+
+
+
+```
+ heroku git:remote -a dash-deputado-est-ba-2018
+```
+
+push heroku 
+
+obs: `main` ao invez de `master`: isso depende do nome da branch original
+
+```
+git push heroku main
 ```
 

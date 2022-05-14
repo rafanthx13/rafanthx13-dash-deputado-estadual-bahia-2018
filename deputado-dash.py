@@ -50,7 +50,8 @@ def cast_float_to_money(anumber):
 ############### READ DATASETS ###############
 
 # Cidades e Votos
-df_deputado_cidade = pd.read_csv('./datasets/deputado_votes_by_city.csv', sep=';')
+df_deputado_cidade = pd.read_csv('./datasets/deputado_votes_by_city_csv.zip',
+                                 sep=';', compression='zip')
 
 # TSE + Gazeta + Estadao
 df_deputado_info =  pd.merge(
