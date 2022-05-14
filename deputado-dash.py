@@ -12,6 +12,9 @@ import dash_bootstrap_components as dbc
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.SOLAR], meta_tags=[
         {"name": "viewport", "content": "width=device-width, initial-scale=1"}
     ])
+
+server = app.server
+
 theme_graphs = 'solar'
 load_figure_template([theme_graphs])
 # DarkThemes: SOLAR; CYBORG
