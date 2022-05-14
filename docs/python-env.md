@@ -63,9 +63,21 @@ py -m pip install dash_bootstrap_templates
 
 ## Deploy no Heroku
 
-dash-deputado-estadual-bahia-2018
+fazzer login no heroku CLI
 
+```
+heroku login
+```
 
+Criar projeto heroku:
+
++  You have to change my-dash-app to a unique name. The name must start with a letter and can only contain lowercase letters, numbers, and dashes.
+
+```
+heroku create my-dash-app
+```
+
+Setar repo Heroku
 
 ```
  heroku git:remote -a dash-deputado-est-ba-2018
@@ -73,7 +85,7 @@ dash-deputado-estadual-bahia-2018
 
 push heroku 
 
-obs: `main` ao invez de `master`: isso depende do nome da branch original
+obs: `main` ao invez de `master`: isso depende do nome da branch original do priejto git original
 
 ```
 git push heroku main

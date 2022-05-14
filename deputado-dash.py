@@ -31,13 +31,8 @@ def get_df_deputado_city(deputado_name):
             df_deputado_cidade[ df_deputado_cidade['deputado_url'] == url_key],
             how="inner", left_on='deputado_url', right_on='deputado_url'
         )
-
-# filter df_deputado_info by name
-def get_df_deputado_row(deputado_name):
-    return df_deputado_info[
-        df_deputado_info['Nome na urna'] == deputado_name
-    ]
-
+    
+# convert float to in with decimal brasilian 
 def cast_float_to_br_int(anumber):
     return "{:,.0f}".format(anumber).replace(
         ',','x').replace('.',',').replace('x','.')
