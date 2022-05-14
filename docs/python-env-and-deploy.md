@@ -58,7 +58,7 @@ py -m pip install plotly
 py -m pip install dash
 py -m pip install gunicorn
 py -m pip install pandas
-py -m pip install dash_bootstrap_templates  
+py -m pip install dash_bootstrap_templates
 ```
 
 ## Deploy no Heroku
@@ -85,7 +85,8 @@ Setar repo Heroku
 
 push heroku 
 
-obs: `main` ao invez de `master`: isso depende do nome da branch original do priejto git original
++ obs: `main` ao invez de `master`+ isso depende do nome da branch original do priejto git original
++ Serve para atualizar no heroku-remote
 
 ```
 git push heroku main

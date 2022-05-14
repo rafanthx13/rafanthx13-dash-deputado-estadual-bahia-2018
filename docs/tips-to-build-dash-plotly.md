@@ -16,7 +16,7 @@ Mesmo que seja interativo, ao abrir o DashBoard é bom já ter dados default par
 
 + Todos os componente `html` ou `dbc` tem como primeiro parâmetro `children`, que é o `get_text()` real daquele componete, ou um outro comonente html/dbc
 
-## Fazer o Deploy no Heroku
+## Preparar arquivo `py` para deploy no Heroku
 
 É preciso ter as seguintes coisas:
 
