@@ -1,0 +1,6 @@
+deputado-estadual/deputado_votes_by_city.csv
+
+env/
+*.pyc
+.DS_Store
+.env
