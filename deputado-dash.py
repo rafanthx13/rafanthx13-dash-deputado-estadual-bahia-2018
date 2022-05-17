@@ -156,7 +156,7 @@ fig_bar_percentage = plotly_bar_plot(
 
 col1 = [
     html.H5("Escolha o Deputado Estadual:",
-            style={"marginTop": "20px", 'marginBottom': '20px'}),
+            style={ 'marginBottom': '20px'}),
     html.Div(
         className="div-for-dropdown",
         id="div-test",
@@ -193,7 +193,7 @@ col2 = dbc.Card([
     dbc.CardImg(
         id='img',
         src="https://cdn-eleicoes.gazetadopovo.com.br/fotos/bahia/deputado-estadual/joao-isidorio-70000.jpg",
-        style={'paddingTop': 15, 'width': '80%'}
+        style={ 'width': '75%'}
     ),
 ], style={'textAlign': 'center'}, body=True)
 
@@ -240,7 +240,7 @@ app.layout = dbc.Container(
     children=[
         # Titulo e Info Input
         dbc.Row([
-            html.H1(children="DashBoard Eleições 2028 - Deputados Estaduais na Bahia"),
+            html.H1(children="DashBoard Eleições 2018 - Deputados Estaduais na Bahia"),
         ]),
         dbc.Row([
             dbc.Col(col1),
@@ -312,7 +312,11 @@ app.layout = dbc.Container(
             html.Div([
                 html.Span('Desenvolvido por Rafael Morais de Assis - '),
                 html.A('GitHub Link', href='https://github.com/rafanthx13'),
-                html.Span(' - Fonte dos dados: TSE, Gazeta do Povo, Estadão'),
+                html.Span(' - Fonte dos dados: TSE, Gazeta do Povo, Estadão -'),
+                html.A('Análise Exploratória de Dados',
+                    href='https://github.com/rafanthx13/rafanthx13-dash-deputado-estadual-bahia-2018/blob/main/src/02_eda_deputados_estaduais.ipynb'
+                ),
+                
             ]),
         ]),
 ], fluid=True)
